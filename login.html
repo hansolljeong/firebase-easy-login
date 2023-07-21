@@ -48,10 +48,10 @@
 
       document.getElementById('signUpButton').addEventListener('click', (event) => {
         event.preventDefault()
-        const email = document.getElementById('signUpEmail').value;
-        const password = document.getElementById('signUpPassword').value;
+        const signUpEmail = document.getElementById('signUpEmail').value;
+        const signUpPassword = document.getElementById('signUpPassword').value;
 
-        createUserWithEmailAndPassword(auth, email, password)
+        createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
           .then((userCredential) => {
             console.log(userCredential)
             // Signed in 
@@ -68,10 +68,10 @@
 
       document.getElementById('signInButton').addEventListener('click', (event) => {
         event.preventDefault()
-        const email = document.getElementById('signInEmail').value;
-        const password = document.getElementById('signInPassword').value;
+        const signInEmail = document.getElementById('signInEmail').value;
+        const signInPassword = document.getElementById('signInPassword').value;
 
-        signInWithEmailAndPassword(auth, email, password)
+        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
           .then((userCredential) => {
             console.log(userCredential)
             // Signed in 
