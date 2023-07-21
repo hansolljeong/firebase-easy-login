@@ -26,21 +26,24 @@
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
     
       // Your web app's Firebase configuration
       const firebaseConfig = {
-        apiKey: "AIzaSyC4rYqy_dvpaeaqOHAJd_Sk7Rvl9ThIwPI",
-        authDomain: "easylogin-d6557.firebaseapp.com",
-        projectId: "easylogin-d6557",
-        storageBucket: "easylogin-d6557.appspot.com",
-        messagingSenderId: "874155295610",
-        appId: "1:874155295610:web:b62a35dec25587a4540cc3"
+        apiKey: "AIzaSyCPfQELTVzxrTLZQLThvXfdbYewIV18dko",
+        authDomain: "largepine-easy-login.firebaseapp.com",
+        projectId: "largepine-easy-login",
+        storageBucket: "largepine-easy-login.appspot.com",
+        messagingSenderId: "535766016814",
+        appId: "1:535766016814:web:ea54e468b04548987b90bf",
+        measurementId: "G-KZ9E1HBT77"
       };
     
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
 
       import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
       
